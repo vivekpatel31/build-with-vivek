@@ -3,7 +3,7 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      nodejs: 20
+      nodejs: 22
     commands:
       - npm install
   build:
@@ -11,7 +11,7 @@ phases:
       - npm run build
   post_build:
     commands:
-      - aws s3 sync dist/ s3://buildwithvivek-site --delete
+      - aws s3 sync dist/ s3://buildwithvivek.dev --delete
       - aws cloudfront create-invalidation --distribution-id E28F5COPRS95GV --paths "/*"
 
 artifacts:
