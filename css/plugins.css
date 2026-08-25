@@ -1,0 +1,15 @@
+/* ----------------------------------------------------------------
+			[ All Css Plugins & Helper Classes File ]
+-----------------------------------------------------------------*/
+
+/* == bootstrap == */
+@import url("plugins/bootstrap.min.css");
+
+/* == ionicons icon font == */
+@import url("plugins/themify-icons.css");
+
+/* == pe-icon-7-stroke == */
+@import url("plugins/pe-icon-7-stroke.css");
+
+/* == fontawesome icon font == */
+@import url("plugins/fontawesome-all.min.css");
