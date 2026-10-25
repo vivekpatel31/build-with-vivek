@@ -8,6 +8,7 @@
 -----------------------------------------------------------------------------------*/
 
 import "devicon/devicon.min.css";
+import "./contact-form.js";
 
 (function () {
     "use strict";

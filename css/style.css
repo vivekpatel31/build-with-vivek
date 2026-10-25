@@ -10289,3 +10289,89 @@ footer.clean-footer.crev:before {
 }
 
 /* ====================== [ End Mobile fixes ] ====================== */
+
+
+/* The contact form (js/contact-form.js). The inputs are styled by .contact-crev above. */
+.contact-form {
+  text-align: left;
+}
+
+.contact-field {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.contact-field span {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.contact-field em {
+  font-style: normal;
+  font-weight: 400;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.contact-form > .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.contact-form > .row > [class*='col-'] {
+  padding-left: 0;
+}
+
+.contact-form > .row > [class*='col-']:last-child {
+  padding-right: 0;
+}
+
+.contact-trap {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.contact-form .butn {
+  padding: 14px 34px;
+  cursor: pointer;
+}
+
+.contact-form .butn:disabled {
+  opacity: 0.6;
+  cursor: progress;
+}
+
+.contact-status {
+  min-height: 1.4em;
+  margin-top: 14px;
+  font-size: 14px;
+}
+
+.contact-status.is-error {
+  color: #f2a38f;
+}
+
+.contact-thanks {
+  display: none;
+  font-size: 18px;
+  color: #14cf93;
+}
+
+.contact-form.is-sent .contact-field,
+.contact-form.is-sent .row,
+.contact-form.is-sent button,
+.contact-form.is-sent .contact-status {
+  display: none;
+}
+
+.contact-form.is-sent .contact-thanks {
+  display: block;
+}

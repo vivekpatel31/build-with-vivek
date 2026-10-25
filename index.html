@@ -903,6 +903,23 @@
                                         <a href="tel:+917567518256">+91 75675 18256</a>
                                     </div>
                                 </div>
+                                <form class="contact-form mt-50 text-left" data-contact-form novalidate>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label class="contact-field"><span>Name</span><input type="text" name="name" autocomplete="name" maxlength="100" required></label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="contact-field"><span>Email</span><input type="email" name="email" autocomplete="email" maxlength="254" required></label>
+                                        </div>
+                                    </div>
+                                    <label class="contact-field"><span>Subject <em>optional</em></span><input type="text" name="subject" maxlength="150"></label>
+                                    <label class="contact-field"><span>Message</span><textarea name="message" rows="6" minlength="5" maxlength="2000" required></textarea></label>
+                                    <!-- A honeypot: real visitors never see or fill it, form-filling bots do. -->
+                                    <input class="contact-trap" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+                                    <button class="butn butn-bord butn-md radius-50" type="submit"><span>Send message</span></button>
+                                    <p class="contact-status" role="status" aria-live="polite"></p>
+                                    <p class="contact-thanks">Thank you. I have your message and will reply soon.</p>
+                                </form>
                             </div>
                         </div>
                     </div>
