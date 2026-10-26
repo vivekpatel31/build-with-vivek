@@ -1,5 +1,5 @@
 // The contact form: posts the message to the shared contact endpoint, which stores it and
-// emails support@dreamlineworks.com and vivek@dreamlineworks.com. The address is public
+// emails the site's own inbox (set per site on the server). The address is public
 // (it is only a URL); the endpoint checks the site, limits how often it can be used, and
 // ignores bots that fill in the hidden "website" field.
 var ENDPOINT = 'https://wuqkxv42gxt324nrm4uvuabfye0wouiu.lambda-url.ap-south-1.on.aws/contact'
